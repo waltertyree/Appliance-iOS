@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>authentication</key>
+	<dict>
+		<key>endpoint</key>
+		<string>https://alpha.app.net/oauth/authenticate</string>
+		<key>parameters</key>
+		<dict>
+			<key>client_id</key>
+			<string>ZQUA5apzhWMQSy8SQ7XTnhcYAJjVaLUT</string>
+			<key>response_type</key>
+			<string>token</string>
+			<key>redirect_uri</key>
+			<string>appliance://authentication</string>
+			<key>scope</key>
+			<string>email follow messages stream write_post</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

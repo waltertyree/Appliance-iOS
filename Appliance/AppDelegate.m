@@ -6,16 +6,23 @@
 //  Copyright (c) 2012 Felipe Laso Marsetti. All rights reserved.
 //
 
+#import "ADNManager.h"
 #import "AppDelegate.h"
+#import "AuthenticationViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    if (![ADNManager sharedManager].accessToken)
+    {
+        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:StoryboardMainStoryboard bundle:nil];
+        
+        AuthenticationViewController *authenticationViewController = [mainStoryboard instantiateViewControllerWithIdentifier:AuthenticationViewControllerIdentifier];
+        
+        [self.window.rootViewController presentViewController:authenticationViewController animated:YES completion:nil];
+    }
+    
     return YES;
 }
 

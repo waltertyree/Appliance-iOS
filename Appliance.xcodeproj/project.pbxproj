@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5508F95415E0744D0062C036 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5508F95315E0744D0062C036 /* MainStoryboard_iPhone.storyboard */; };
+		5508F95915E0781D0062C036 /* AuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5508F95615E0781D0062C036 /* AuthenticationViewController.m */; };
+		5508F95A15E0781D0062C036 /* StreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5508F95815E0781D0062C036 /* StreamViewController.m */; };
 		559B18C715DF26A300D6DCA7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559B18C615DF26A300D6DCA7 /* UIKit.framework */; };
 		559B18C915DF26A300D6DCA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559B18C815DF26A300D6DCA7 /* Foundation.framework */; };
 		559B18CB15DF26A300D6DCA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559B18CA15DF26A300D6DCA7 /* CoreGraphics.framework */; };
@@ -18,6 +21,9 @@
 		559B18E115DF26A300D6DCA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559B18C815DF26A300D6DCA7 /* Foundation.framework */; };
 		559B18E915DF26A300D6DCA7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 559B18E715DF26A300D6DCA7 /* InfoPlist.strings */; };
 		559B18EC15DF26A300D6DCA7 /* ApplianceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 559B18EB15DF26A300D6DCA7 /* ApplianceTests.m */; };
+		559B190C15E012C800D6DCA7 /* ADNEndpoints.plist in Resources */ = {isa = PBXBuildFile; fileRef = 559B190B15E012C800D6DCA7 /* ADNEndpoints.plist */; };
+		559B191215E0167C00D6DCA7 /* ADNManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 559B191115E0167C00D6DCA7 /* ADNManager.m */; };
+		559B192115E0658B00D6DCA7 /* PostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 559B192015E0658B00D6DCA7 /* PostCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5508F95315E0744D0062C036 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		5508F95515E0781D0062C036 /* AuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AuthenticationViewController.h; path = Appliance/AuthenticationViewController.h; sourceTree = "<group>"; };
+		5508F95615E0781D0062C036 /* AuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AuthenticationViewController.m; path = Appliance/AuthenticationViewController.m; sourceTree = "<group>"; };
+		5508F95715E0781D0062C036 /* StreamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StreamViewController.h; path = Appliance/StreamViewController.h; sourceTree = "<group>"; };
+		5508F95815E0781D0062C036 /* StreamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StreamViewController.m; path = Appliance/StreamViewController.m; sourceTree = "<group>"; };
+		554F8FDC15E06A1D00818828 /* ADNSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADNSettings.h; sourceTree = "<group>"; };
 		559B18C215DF26A300D6DCA7 /* Appliance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appliance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		559B18C615DF26A300D6DCA7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		559B18C815DF26A300D6DCA7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -47,6 +59,11 @@
 		559B18E815DF26A300D6DCA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		559B18EA15DF26A300D6DCA7 /* ApplianceTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplianceTests.h; sourceTree = "<group>"; };
 		559B18EB15DF26A300D6DCA7 /* ApplianceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplianceTests.m; sourceTree = "<group>"; };
+		559B190B15E012C800D6DCA7 /* ADNEndpoints.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ADNEndpoints.plist; sourceTree = "<group>"; };
+		559B191015E0167C00D6DCA7 /* ADNManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNManager.h; sourceTree = "<group>"; };
+		559B191115E0167C00D6DCA7 /* ADNManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNManager.m; sourceTree = "<group>"; };
+		559B191F15E0658B00D6DCA7 /* PostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostCell.h; sourceTree = "<group>"; };
+		559B192015E0658B00D6DCA7 /* PostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +125,10 @@
 			children = (
 				559B18D515DF26A300D6DCA7 /* AppDelegate.h */,
 				559B18D615DF26A300D6DCA7 /* AppDelegate.m */,
+				559B18F915DF307D00D6DCA7 /* Settings */,
+				559B18F515DF277500D6DCA7 /* Classes */,
+				559B190115DFFB5100D6DCA7 /* View Controllers */,
+				559B18FB15DFFA8B00D6DCA7 /* Resources */,
 				559B18CD15DF26A300D6DCA7 /* Supporting Files */,
 			);
 			path = Appliance;
@@ -117,9 +138,9 @@
 			isa = PBXGroup;
 			children = (
 				559B18CE15DF26A300D6DCA7 /* Appliance-Info.plist */,
+				559B18D415DF26A300D6DCA7 /* Appliance-Prefix.pch */,
 				559B18CF15DF26A300D6DCA7 /* InfoPlist.strings */,
 				559B18D215DF26A300D6DCA7 /* main.m */,
-				559B18D415DF26A300D6DCA7 /* Appliance-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -141,6 +162,54 @@
 				559B18E715DF26A300D6DCA7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		559B18F515DF277500D6DCA7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				559B191015E0167C00D6DCA7 /* ADNManager.h */,
+				559B191115E0167C00D6DCA7 /* ADNManager.m */,
+				559B191F15E0658B00D6DCA7 /* PostCell.h */,
+				559B192015E0658B00D6DCA7 /* PostCell.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		559B18F915DF307D00D6DCA7 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				554F8FDC15E06A1D00818828 /* ADNSettings.h */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		559B18FB15DFFA8B00D6DCA7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				559B190B15E012C800D6DCA7 /* ADNEndpoints.plist */,
+				559B18FC15DFFA9500D6DCA7 /* Storyboards */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		559B18FC15DFFA9500D6DCA7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5508F95315E0744D0062C036 /* MainStoryboard_iPhone.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		559B190115DFFB5100D6DCA7 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5508F95515E0781D0062C036 /* AuthenticationViewController.h */,
+				5508F95615E0781D0062C036 /* AuthenticationViewController.m */,
+				5508F95715E0781D0062C036 /* StreamViewController.h */,
+				5508F95815E0781D0062C036 /* StreamViewController.m */,
+			);
+			name = "View Controllers";
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				559B18D115DF26A300D6DCA7 /* InfoPlist.strings in Resources */,
+				559B190C15E012C800D6DCA7 /* ADNEndpoints.plist in Resources */,
+				5508F95415E0744D0062C036 /* MainStoryboard_iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +322,10 @@
 			files = (
 				559B18D315DF26A300D6DCA7 /* main.m in Sources */,
 				559B18D715DF26A300D6DCA7 /* AppDelegate.m in Sources */,
+				559B191215E0167C00D6DCA7 /* ADNManager.m in Sources */,
+				559B192115E0658B00D6DCA7 /* PostCell.m in Sources */,
+				5508F95915E0781D0062C036 /* AuthenticationViewController.m in Sources */,
+				5508F95A15E0781D0062C036 /* StreamViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +424,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Appliance/Appliance-Prefix.pch";
 				INFOPLIST_FILE = "Appliance/Appliance-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -360,6 +436,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Appliance/Appliance-Prefix.pch";
 				INFOPLIST_FILE = "Appliance/Appliance-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -418,6 +495,7 @@
 				559B18F115DF26A300D6DCA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		559B18F215DF26A300D6DCA7 /* Build configuration list for PBXNativeTarget "ApplianceTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +504,7 @@
 				559B18F415DF26A300D6DCA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
