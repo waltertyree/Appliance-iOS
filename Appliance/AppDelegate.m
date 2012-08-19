@@ -14,15 +14,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    if (![ADNManager sharedManager].accessToken)
-    {
-        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:StoryboardMainStoryboard bundle:nil];
         
-        AuthenticationViewController *authenticationViewController = [mainStoryboard instantiateViewControllerWithIdentifier:AuthenticationViewControllerIdentifier];
-        
-        [self.window.rootViewController presentViewController:authenticationViewController animated:YES completion:nil];
-    }
-    
     return YES;
 }
 
@@ -46,6 +38,15 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    if (![ADNManager sharedManager].accessToken)
+    {
+        
+        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:StoryboardMainStoryboard bundle:nil];
+        
+        AuthenticationViewController *authenticationViewController = [mainStoryboard instantiateViewControllerWithIdentifier:AuthenticationViewControllerIdentifier];
+        
+        [self.window.rootViewController presentModalViewController:authenticationViewController animated:YES];
+    }
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
