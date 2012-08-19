@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+#define ADNEndpointsAPIKey                                          @"api"
+    #define ADNEndpointsAPIAccessToken                              @"access_token"
+    #define ADNEndpointsAPIEndpoint                                 @"endpoint"
+    #define ADNEndpointsAPITimeoutInterval                          @"timeout_interval"
+
 #define ADNEndpointsAuthenticationKey                               @"authentication"
     #define ADNEndpointsAuthenticationEndpoint                      @"endpoint"
     #define ADNEndpointsAuthenticationParameters                    @"parameters"
@@ -15,6 +20,10 @@
         #define ADNEndpointsAuthenticationParameterResponseType     @"response_type"
         #define ADNEndpointsAuthenticationParameterRedirectURI      @"redirect_uri"
         #define ADNEndpointsAuthenticationParameterScope            @"scope"
+    #define ADNEndpointsAuthenticationTimeoutInterval               @"timeout_interval"
+
+#define ADNEndpointsPostKey                                         @"post"
+    #define ADNEndpointsPostUserStream                              @"userStream"
 
 #define ADNNotificationAccessTokenAcquired                          @"accessTokenAcquired"
 

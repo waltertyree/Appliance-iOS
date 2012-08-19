@@ -59,10 +59,10 @@
     NSString *requestString = [NSString stringWithFormat:@"%@?%@", endpoint, [NSString stringWithString:parametersString]];
     
     NSURL *requestURL = [NSURL URLWithString:[requestString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-    
+        
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     [request setURL:requestURL];
-    [request setTimeoutInterval:30];
+    [request setTimeoutInterval:[[authentication objectForKey:ADNEndpointsAuthenticationTimeoutInterval] doubleValue]];
     
     [self.webView loadRequest:request];
 }
@@ -113,8 +113,13 @@
                 [self dismissViewControllerAnimated:YES completion:nil];
             }
         }
-        else
+        else if ([requestResults objectForKey:@"https://alpha.app.net/login/?n"] ||
+                 [requestResults objectForKey:@"https://alpha.app.net/oauth/authenticate?client_id"])
         {
+            return YES;
+        }
+        else
+        {            
             [self dismissViewControllerAnimated:YES completion:^{
                 UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"ERROR"
                                                                     message:@"There was an error during login. Please try again later."

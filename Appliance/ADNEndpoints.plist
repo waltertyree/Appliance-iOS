@@ -2,6 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>post</key>
+	<dict>
+		<key>userStream</key>
+		<string>/stream/0/posts/stream</string>
+	</dict>
+	<key>api</key>
+	<dict>
+		<key>endpoint</key>
+		<string>https://alpha-api.app.net</string>
+		<key>access_token</key>
+		<string>access_token</string>
+		<key>timeout_interval</key>
+		<string>15</string>
+	</dict>
 	<key>authentication</key>
 	<dict>
 		<key>endpoint</key>
@@ -17,6 +31,8 @@
 			<key>scope</key>
 			<string>email follow messages stream write_post</string>
 		</dict>
+		<key>timeout_interval</key>
+		<string>30</string>
 	</dict>
 </dict>
 </plist>
